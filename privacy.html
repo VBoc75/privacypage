@@ -32,7 +32,17 @@
   <h2>📲 Publicité et partenaires</h2>
   <p>QuizFlash utilise la régie publicitaire <strong>Google AdMob</strong> pour afficher des annonces dans l'application. Google peut collecter certaines informations techniques (comme l’identifiant publicitaire Android) à des fins de mesure ou de personnalisation des annonces, conformément à sa propre politique de confidentialité.</p>
   <p>Les utilisateurs de l'Union Européenne ou du Royaume-Uni voient un <strong>formulaire de consentement</strong> (géré par Google via le SDK <strong>UMP</strong>) leur permettant de choisir s’ils souhaitent recevoir des publicités personnalisées ou non.</p>
-  <p>Le consentement peut être retiré à tout moment depuis l'application.</p>
+  <p>
+  Le consentement peut être retiré à tout moment depuis l'application.
+  <a
+    href="#"
+    onclick="event.preventDefault(); if (window.Consent?.openConsentForm) { window.Consent.openConsentForm(); } else { alert('Consentement indisponible pour le moment.'); }"
+    style="text-decoration: underline; color: #0066cc; margin-left: 4px;"
+  >
+    Gérer mes préférences de confidentialité
+  </a>
+</p>
+<small style="color: gray;">(Ce lien fonctionne uniquement depuis l’application mobile QuizFlash)</small>
 
   <h2>🔐 Sécurité</h2>
   <p>Aucune donnée personnelle n’est stockée par l’application. Les données publicitaires sont traitées exclusivement par les partenaires de Google, sous leur responsabilité.</p>
